@@ -13,22 +13,25 @@ class Main extends React.Component {
     }
 
     componentWillMount(){
-
+        console.log('componentWillUnmount');
     }
-
+    
     componentDidMount(){
         // make requests
+        console.log('componentDidMount');
     }
-
-    compomnentReceiveProps(nextProps, nextState){
-
+    
+    componentReceiveProps(nextProps, nextState){
+        console.log('nextProps', nextProps);
+        console.log('nextState', nextState);
+        console.log('componentReceiveProps')
     }
 
     componentWillUnmount(){}
 
     shouldComponentUpdate(nestPros){
-        // if (user.username )
         // return boolean
+        console.log('shouldComponentUpdate');
     }
 
     changeField = (field, value) => {
