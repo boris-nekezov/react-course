@@ -31,7 +31,7 @@ class Main extends React.Component {
 
     shouldComponentUpdate(nestPros){
         // return boolean
-        console.log('shouldComponentUpdate');
+        // console.log('shouldComponentUpdate');c
     }
 
     changeField = (field, value) => {
