@@ -23,8 +23,8 @@ const filteredUsers = users.filter(({ website }) => website.includes(filter) )
     <div>
         <button onClick={() => setfilter('')}>CLEAR</button>
         <button onClick={() => setfilter('.com')}>all with .com</button>
-        <button onClick={() => setfilter('.org')}>all with .com</button>
-        <button onClick={() => setfilter('.biz')}>all with .com</button>
+        <button onClick={() => setfilter('.org')}>all with .org</button>
+        <button onClick={() => setfilter('.biz')}>all with .biz</button>
 
         {filteredUsers.map(user => {
             const { name, id } = user;
