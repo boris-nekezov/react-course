@@ -2,8 +2,9 @@ import React from 'react';
 import Login from './Login'
 
 const Auth = ({ children }) => {
-    // vzimam tokena
+    // we get the token here
     const token = localStorage.getItem('token')
+    
     // pravim provekrka ako nqma token
     if(!token){
         return <Login />
