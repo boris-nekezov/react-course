@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Main extends React.Component {
+class UserEdit extends React.Component {
 	state = {
 		user: {
 			username: '',
@@ -36,4 +36,4 @@ class Main extends React.Component {
 	}
 }
 
-export default Main;
+export default UserEdit;

@@ -9,3 +9,6 @@ npm install superagent-promise-plugin
 
 https://jsonplaceholder.typicode.com
 
+# Lesson 3
+
+login 
