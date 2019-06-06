@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-// import UserEdit from './components/user/UserEdit';
+//1
+import UserEdit from './components/user/UserEdit';
 import UserList from './components/user/UserList';
 import Login from './components/user/Login';
 
@@ -20,7 +21,8 @@ function App() {
 				<Route exact path="/register" component={Test} />
 
 				<Auth>
-					<Route path="/" component={UserList} />
+					<Route exact path="/" component={UserList} />
+					<Route path="/user/:id" component={UserEdit} />
 				</Auth>
 			</Switch>		
 		</React.Fragment>
@@ -28,4 +30,13 @@ function App() {
 }
 
 export default App;
+
+/*
+To do list Application
+kato se shraktne to do da checknem butoncheto
+create
+edit
+update
+
+*/
 

@@ -14,6 +14,19 @@ export async function getUsers() {
 	}
 }
 
+export async function getUserById(id) {
+	try {
+		/* Zadavam na url-a nqkaku user i tozi respons iskam da go donese */
+		const response = await request
+			.get(`${GET_USERS}/${id}`)
+			.use(SuperagentPromisePlugin)
+			.set('Content-Type', 'text/plain');
+		return response.body;
+	} catch (e) {
+		throw e;
+	}
+}
+
 export async function login({email, password}){
 	try {
 		const response = await request
@@ -31,3 +44,21 @@ export async function login({email, password}){
 	}
 
 } 
+
+export async function fetchCurrentUser(){
+	try {
+		const response = await request.get(GET_SINGLE_USER);
+		return response.body
+	} catch (e){
+
+	}
+
+}
+
+
+
+
+
+
+
+
