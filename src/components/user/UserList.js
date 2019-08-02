@@ -17,7 +17,8 @@ const UserList = () => {
             setUsers(userResponse)
             // console.log('users', users);
         }
-    fetchUsers();   
+        
+        fetchUsers();   
 
         const foundFilter = localStorage.getItem('filter')
 
